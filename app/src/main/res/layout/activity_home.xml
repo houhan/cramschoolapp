@@ -7,17 +7,50 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.a0705.HomeActivity">
+    tools:context="com.example.user.a0705.HomeActivity"
+    android:background="#dce3fe">
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:id="@+id/schedule"
+        android:background="@drawable/schedule"
+        android:layout_alignTop="@+id/Catch"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:id="@+id/qk"
+        android:background="@drawable/qk"
+        android:layout_alignTop="@+id/attendance"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:id="@+id/attendance"
+        android:background="@drawable/absence"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_height="150dp"
+        android:id="@+id/billboard"
+        android:background="@drawable/information"
+        android:layout_alignEnd="@+id/qk"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 
-
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:id="@+id/Catch"
+        android:background="@drawable/gohome"
+        android:layout_below="@+id/attendance"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
 
 
 </RelativeLayout>

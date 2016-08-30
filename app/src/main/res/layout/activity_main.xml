@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.user.a0705.MainActivity"
-    android:background="@drawable/login">
+    android:background="#dce3fe">
 
     <EditText
         android:layout_width="200dp"
@@ -24,26 +24,59 @@
     <EditText
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
+
         android:id="@+id/editPWD"
+     android:inputType="textPassword"
+     android:ems="10"
         android:layout_marginTop="210dp"
         android:layout_marginRight="37dp"
         android:layout_marginEnd="37dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        />
+        android:layout_alignParentEnd="true"/>
+
+
 
     <Button
-        android:layout_width="120dp"
+        android:layout_width="150dp"
         android:layout_height="70dp"
-        android:text="New Button"
         android:id="@+id/button"
         android:layout_marginTop="42dp"
-        android:alpha="0"
+        android:alpha="100"
         style="oval"
         android:layout_below="@+id/editPWD"
+        android:background="@drawable/login"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="帳號"
+        android:id="@+id/textView"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/editID"
+        android:layout_toLeftOf="@+id/editID"
+        android:layout_toStartOf="@+id/editID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密碼"
+        android:id="@+id/textView2"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/editPWD"
+        android:layout_toLeftOf="@+id/editPWD"
+        android:layout_toStartOf="@+id/editPWD" />
+
+    <Button
+        style="oval"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:text="註冊"
+        android:id="@+id/create"
+        android:alpha="100"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
 
 </RelativeLayout>
