@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.user.a0705.MapsActivity"
     android:orientation="vertical"
-    android:background="#e3f9ff">
+    android:background="#d3defe">
 
     <TextView
         android:layout_width="match_parent"

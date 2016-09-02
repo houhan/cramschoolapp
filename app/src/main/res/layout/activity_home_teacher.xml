@@ -7,8 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.a0705.HomeActivity"
-    android:background="#d3defe">
+    tools:context="com.example.user.a0705.Home_teacherActivity">
 
     <Button
         android:layout_width="170dp"
@@ -31,26 +30,33 @@
         android:layout_height="85dp"
         android:id="@+id/attendance"
         android:background="@drawable/absence"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/billboard"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
         android:id="@+id/billboard"
         android:background="@drawable/information"
-        android:layout_alignEnd="@+id/qk"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignTop="@+id/test"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="170dp"
         android:layout_height="85dp"
         android:id="@+id/Catch"
         android:background="@drawable/gohome"
+        android:layout_marginTop="50dp"
         android:layout_below="@+id/attendance"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="43dp" />
+        android:layout_alignParentStart="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:background="@drawable/create"
+        android:id="@+id/create"
+        android:layout_alignTop="@+id/billboard"
+        android:layout_alignStart="@+id/qk" />
 
 </RelativeLayout>

@@ -42,7 +42,7 @@ public class CreateMemberActivity extends AppCompatActivity {
         PasswordInput = (EditText) findViewById(R.id.createpwd);
         NameInput = (EditText) findViewById(R.id.createname);
 
-        Button CreateButton = (Button) findViewById(R.id.create);
+        Button CreateButton = (Button) findViewById(R.id.test);
         CreateButton.setOnClickListener(CreateMemberListener);
 /*
         String currentRegId = getGcmRegId();

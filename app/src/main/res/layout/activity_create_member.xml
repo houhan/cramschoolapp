@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.user.a0705.CreateMemberActivity"
-    android:background="#dce3fe">
+    android:background="#d3defe">
 
     <EditText
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="註冊"
-        android:id="@+id/create"
+        android:id="@+id/test"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 

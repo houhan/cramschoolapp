@@ -1,26 +1,16 @@
 package com.example.user.a0705;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.net.URLEncoder;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.view.View;
 import android.view.View.OnClickListener;
 
 import org.json.JSONArray;
@@ -28,21 +18,16 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
-import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Response.ErrorListener;
-import com.android.volley.RetryPolicy;
 import com.android.volley.VolleyError;
 import com.android.volley.Response.Listener;
 import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.toolbox.Volley;
 import com.example.user.a0705.volleymgr.NetworkManager;
 import com.android.volley.toolbox.StringRequest;
 
 
 import java.security.MessageDigest;
 //import java.net.URL;
-import java.net.URLEncoder;
 
 
 public class MainActivity extends Activity {
@@ -63,12 +48,12 @@ public class MainActivity extends Activity {
         AccountInput = (EditText) findViewById(R.id.editID);
         PasswordInput = (EditText) findViewById(R.id.editPWD);
 
-        Button CreateMemberButton = (Button) findViewById(R.id.create);
+        Button CreateMemberButton = (Button) findViewById(R.id.test);
         CreateMemberButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(MainActivity.this, CreateMemberActivity.class);
+                Intent intent = new Intent(MainActivity.this, Home_teacherActivity.class);
                 startActivity(intent);
             }
         });
