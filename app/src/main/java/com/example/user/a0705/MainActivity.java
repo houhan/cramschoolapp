@@ -48,6 +48,7 @@ public class MainActivity extends Activity {
         AccountInput = (EditText) findViewById(R.id.editID);
         PasswordInput = (EditText) findViewById(R.id.editPWD);
 
+/*
         Button CreateMemberButton = (Button) findViewById(R.id.test);
         CreateMemberButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +58,7 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+        */
 
         // 取得帳號密碼
         /*String strUserName = AccountInput.getText().toString();

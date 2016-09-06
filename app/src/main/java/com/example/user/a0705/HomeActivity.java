@@ -39,6 +39,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+
         Button button3 = (Button) findViewById(R.id.Catch);//取得按鈕
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +49,7 @@ public class HomeActivity extends AppCompatActivity {
                 HomeActivity.this.startActivity(intent);
             }
         });
+
 
         Button button4 = (Button) findViewById(R.id.schedule);//取得按鈕
         button4.setOnClickListener(new View.OnClickListener() {

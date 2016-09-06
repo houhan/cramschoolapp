@@ -63,7 +63,6 @@ public class BillboardActivity extends HomeActivity {
         NetworkManager.getInstance(this).request(null, request);
 
        /* Button button = (Button) findViewById(R.id.buttonAdd);//取得按鈕
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,7 +92,6 @@ public class BillboardActivity extends HomeActivity {
                 StringRequest request = new StringRequest(Request.Method.GET, "https://cramschoollogin.herokuapp.com/api/delete2" , mOnDeleteSuccessListener, mOnErrorListener);
                 NetworkManager.getInstance(BillboardActivity.this).request(null, request);
             }
-
         });*/
 
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
@@ -163,24 +161,19 @@ public class BillboardActivity extends HomeActivity {
 
 /*
     private Response.Listener<String> mOnDeleteSuccessListener = new Response.Listener<String>() {
-
         @Override
         public void onResponse(String response) {
-
         }
     };
-
     private ErrorListener mOnErrorListener = new ErrorListener() {
-
         @Override
         public void onErrorResponse(VolleyError err) {
-
             Toast.makeText(BillboardActivity.this, err.toString(), Toast.LENGTH_LONG).show();
         }
     };*/
 
 
-//回前頁
+    //回前頁
     public void onBackPressed() {
         Intent intent = new Intent(this, MainActivity.class);
         setResult(RESULT_OK, intent);

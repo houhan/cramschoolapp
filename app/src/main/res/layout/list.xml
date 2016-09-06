@@ -2,15 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@drawable/background">
     <ListView
         android:id="@+id/listView"
         android:layout_width="350dp"
         android:layout_height="442dp"
         android:layout_weight="0.62"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true" />
 
     <!--<TextView-->
         <!--android:id="@+id/empty"-->
